@@ -191,7 +191,7 @@ npm start
 <a href="https://www.youtube.com/c/aman ulla" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="aman ulla" height="30" width="40" /></a>
 </p>
 
-<hr>
+
 
 <h2 align="left">👋 Srinivas Alva</h2>
 
