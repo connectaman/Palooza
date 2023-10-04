@@ -95,7 +95,10 @@ These enhancements will make Palooza an even more powerful tool for researchers,
 -	https://www.connectedpapers.com/
 -	https://custom-writing.org/blog/research-papers-analysis
 -	https://cloud.google.com/products/calculator
-
+-   https://mui.com/material-ui/getting-started/ 
+-   https://fastapi.tiangolo.com/
+-   https://www.langchain.com/
+-   https://serpapi.com/google-scholar-api
 
 
 # Contributors
