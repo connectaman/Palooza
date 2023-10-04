@@ -3,7 +3,7 @@ Research Rovers AI Research Assistants for NASA
 
 # Demo
 
-[![Watch the video](screenshots/palooza screenshot (1).png)](https://github.com/connectaman/Palooza/blob/main/documentations/Palooza%20Handson%20Demo.mp4)
+![https://github.com/connectaman/Palooza/blob/d9e5adc3a37111074c6c9576a6650572d68d8537/screenshots/palooza%20screenshot%20(1).png](https://github.com/connectaman/Palooza/blob/main/documentations/Palooza%20Handson%20Demo.mp4)
 
 
 # Introduction
@@ -46,7 +46,7 @@ The following diagram represents the behavior of the Palooza application:
 
 
 
-![Architecture](https://github.com/connectaman/Palooza/blob/5d9acbf0bfb518b7a2cc23792ad075110a250d5a/documentations/deployment%20arch.png)
+![Architecture](https://github.com/connectaman/Palooza/blob/d9e5adc3a37111074c6c9576a6650572d68d8537/documentations/UML.png)
 
 Palooza Relevance for defined problem Statment: Palooza directly addresses the pressing challenges faced by researchers in today's information-rich world, offering a solution that streamlines the literature review process, saving valuable time and resources while ensuring that only the most pertinent research is considered.
 Effectiveness of Palooza application for NASA researchers: With its wide array of features, from automated paper retrieval to advanced paper analysis and Q&A capabilities, Palooza empowers researchers to efficiently and effectively extract meaningful insights from the vast scientific literature, ultimately enhancing their ability to leverage the latest advancements for their missions.
@@ -56,14 +56,14 @@ Impact of Palooza Application on NASA Researchers: By reducing information overl
 
 Cloud Agnostic and easy deployment: The Palooza application embodies a cloud-agnostic architecture that prioritizes adaptability and scalability across diverse cloud providers. To attain this goal, our initial step involved conceptualizing the application using a microservices-oriented methodology, dividing it into discrete, autonomous components or containers. We harnessed containerization tools such as Docker to package each service together with its requisite dependencies. Subsequently, we adopted container orchestration frameworks like Kubernetes, which provide abstraction layers seamlessly aligning with multiple cloud providers. This abstraction empowered us to consistently deploy and administer the application without being constrained by the underlying infrastructure.
 
-![Architecture](documentations/deployment arch.png)
+![Architecture](https://github.com/connectaman/Palooza/blob/5d9acbf0bfb518b7a2cc23792ad075110a250d5a/documentations/deployment%20arch.png)
 
 #### Can cater up to hundreds of thousands of users? 
 The deployment approach utilized plays a pivotal role in ensuring our application's readiness to cater to millions of users. By embracing a cloud-agnostic architecture founded on microservices and containerization, we've laid the groundwork for remarkable scalability. This strategy allows us to efficiently scale individual components of the application to meet increased demand, ensuring optimal performance and responsiveness as our user base expands.
 
 #### Comparing Palooza to Other Available Applications
 
-![Architecture](documentations/deployment arch.png)
+![Comparing](https://github.com/connectaman/Palooza/blob/d9e5adc3a37111074c6c9576a6650572d68d8537/documentations/comparision.png)
 
 # Future Enhancement:
 
