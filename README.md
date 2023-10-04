@@ -45,6 +45,7 @@ To address the challenges faced by researchers in managing and extracting insigh
 10.	Topic Trend Analysis
 11.	Relevant Searches
 12.	Bookmark and Favorite List
+    
 Palooza aims to revolutionize the research experience by offering a holistic platform that addresses the challenges researchers face in accessing, analyzing, and making sense of scientific literature. With its powerful features, Palooza empowers researchers to efficiently navigate the ever-expanding world of knowledge and unlock new avenues of exploration within their domains.
 The following diagram represents the behavior of the Palooza application:
 
