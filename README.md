@@ -91,13 +91,17 @@ These enhancements will make Palooza an even more powerful tool for researchers,
 
 # Screenshots
 
-|1|2|
+|Screenshots|Screenshots|
 |----|----|
 |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(1).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(2).png)  |
-|    |    |
-|    |    |
-|    |    |
-|    |    |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(3).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(4).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(5).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(6).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(7).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(8).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(9).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(10).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(11).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(12).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(13).png)  |  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(14).png)  |
+|  ![1](https://github.com/connectaman/Palooza/blob/d50c81814744a0e5f40200113476b0280bfade1e/screenshots/palooza%20screenshot%20(15).png)  |  .. |
+
 
 
 #### References:
