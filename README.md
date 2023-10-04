@@ -192,3 +192,18 @@ npm start
 </p>
 
 <hr>
+
+<h2 align="left">👋 Srinivas Alva</h2>
+
+- 🌱 I am presently in the process of learning and actively engaged with **Gen AI**.
+
+
+- 📫 How to reach me **alva.srinu@gmail.com**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="[https://twitter.com/connectaman1](https://twitter.com/alva_srinivas)" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="srinivas_alva" height="30" width="40" /></a>
+<a href="https://in.linkedin.com/in/srinivas-alva-91630a139" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="srinivasalva" height="30" width="40" /></a>
+</p>
+
+<hr>
