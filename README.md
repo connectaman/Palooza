@@ -83,10 +83,55 @@ These enhancements will make Palooza an even more powerful tool for researchers,
 
 # Steps to Deploy:
 
-## FrontEnd UI
-
+- Dependencies
+    - python>=3.10
+    - nodejs
+    - docker
 
 ## Backend FastAPI
+
+- Step 1: Redirect to palooza-backend directory
+```
+cd palooza-backend/
+```
+- Step 2: Export env variables
+```
+export OPENAI_API_KEY=""
+export SERP_API_KEY=""
+export GOOGLE_CSE_ID=""
+export GOOGLE_API_KEY=""
+```
+- Step 3: build the docker image
+```
+docker build -t palooza:latest .
+```
+- Step 3: run the docker image
+```
+docker run -d -p 8000:8000 palooza:latest .
+```
+
+
+## FrontEnd UI
+
+- Step 1: Redirect to palooza-frontend directory
+```
+cd palooza-frontend/
+```
+- Step 2: Install all the required packages
+```
+npm install
+```
+- Step 3: Change the Backend API url from the above steps
+```
+cd src/Config/config.js
+nano config.js
+```
+- Step 3: Start the server
+```
+npm start
+```
+
+
 
 
 # Screenshots
