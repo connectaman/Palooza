@@ -3,7 +3,10 @@ Research Rovers AI Research Assistants for NASA
 
 # Demo
 
-[![Watch the video](https://github.com/connectaman/Palooza/blob/d9e5adc3a37111074c6c9576a6650572d68d8537/screenshots/palooza%20screenshot%20(1).png)](https://github.com/connectaman/Palooza/blob/main/documentations/Palooza%20Handson%20Demo.mp4)
+
+<video 
+src="https://github.com/connectaman/Palooza/blob/99dc284df269217c290d34c133381f7b9e2278db/documentations/Palooza%20Handson%20Demo.mp4">
+</video>
 
 
 
