@@ -29,7 +29,7 @@ pubmed = PubMed(tool="Searcher", email="my@email.address")
 
 headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'}
 
-SERP_API_KEY = os.getenv("SERP_API_KEY","7e20f70d67b2b3a8932bce896123ef1612cefe63436dbc12ae21acd77d4cd6af")
+SERP_API_KEY = os.getenv("SERP_API_KEY","")
 
 def scrape_paper_info(paper_name):
     params = {
