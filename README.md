@@ -46,7 +46,7 @@ The following diagram represents the behavior of the Palooza application:
 
 
 
-![Architecture](documentations/deployment arch.png)
+![Architecture](https://github.com/connectaman/Palooza/blob/5d9acbf0bfb518b7a2cc23792ad075110a250d5a/documentations/deployment%20arch.png)
 
 Palooza Relevance for defined problem Statment: Palooza directly addresses the pressing challenges faced by researchers in today's information-rich world, offering a solution that streamlines the literature review process, saving valuable time and resources while ensuring that only the most pertinent research is considered.
 Effectiveness of Palooza application for NASA researchers: With its wide array of features, from automated paper retrieval to advanced paper analysis and Q&A capabilities, Palooza empowers researchers to efficiently and effectively extract meaningful insights from the vast scientific literature, ultimately enhancing their ability to leverage the latest advancements for their missions.
@@ -80,6 +80,12 @@ In addition to the existing features, we plan to implement several advanced enha
 These enhancements will make Palooza an even more powerful tool for researchers, providing a seamless and comprehensive research experience across diverse domains.
 
 
+# Steps to Deploy:
+
+## FrontEnd UI
+
+
+## Backend FastAPI
 
 
 #### References:
