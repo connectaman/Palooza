@@ -1,0 +1,55 @@
+ul.tree {
+    font: bold 160%/1 var(--font-mono);
+    --dx: 5rem;
+}
+
+ul.tree,
+ul.tree ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul.tree>li {
+    margin: 0;
+}
+
+ul.tree li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: .3em var(--dx);
+    font-size: 75%;
+}
+
+ul.tree span {
+    padding: .3em .5em .15em;
+    background: var(--color-red);
+    border-radius: .4rem;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+    white-space: nowrap;
+}
+
+ul.tree li li span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: var(--dx);
+    height: .15em;
+    transform: translateY(-50%) skewY(calc(var(--angle, 0) * 1deg)) scaleY(calc(1 / var(--cos-angle, 1)));
+    transform-origin: right;
+    background: inherit;
+    background-image: linear-gradient(to right, var(--parent-color), transparent);
+}
+
+ul.tree>li li span {
+    /* Second+ level */
+    background: var(--color-violet);
+    --parent-color: var(--color-red);
+}
+
+ul.tree>li li li span {
+    /* Third+ level */
+    background: var(--color-green);
+    --parent-color: var(--color-violet);
+}

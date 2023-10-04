@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  background: #222831;
+  transition: 0.2s linear all;
+}
+
+.DisplayCenter {
+  justify-content: center;
+  height: 100vh;
+}
+
+.SearchBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.SearchBarContainer.collapsed {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.SearchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.SearchBarContainer.collapsed .SearchContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.SearchBarContainer.collapsed .SearchBoxContainer {
+  min-width: 320px;
+  margin: 10px 20px;
+}
+
+.SearchBarContainer.collapsed .CompanyLogo {
+  font-size: 1em !important;
+}
+
+.SearchBarContainer.collapsed .CustomSearchInput {
+  font-size: 1em !important;
+}
+
+.AppFooter {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  text-align: center;
+  background: white;
+  border: 2px solid rgb(25, 118, 210);
+  border-right: 0;
+  border-bottom:0;
+  border-radius: 25px 0 0 0;
+  box-shadow: 0px -5px 10px 0px rgba(25, 118, 210, 0.5);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
