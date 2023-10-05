@@ -72,14 +72,14 @@ The deployment approach utilized plays a pivotal role in ensuring our applicatio
 
 In addition to the existing features, we plan to implement several advanced enhancements in current Palooza application:
 
-	Complex and Domain-Specific Retrieval
-	Advanced Mind Maps
-	Universal Retrieval Engine Support
-	UI Enhancement
-	Diverse Data Source Integration
-	Advanced Table Comparison View
-	Downloading Reports
-	Database Integration for User Login
+-	Complex and Domain-Specific Retrieval
+-	Advanced Mind Maps
+-	Universal Retrieval Engine Support
+-	UI Enhancement
+-	Diverse Data Source Integration
+-	Advanced Table Comparison View
+-	Downloading Reports
+-	Database Integration for User Login
 These enhancements will make Palooza an even more powerful tool for researchers, providing a seamless and comprehensive research experience across diverse domains.
 
 
@@ -126,8 +126,7 @@ npm install
 ```
 - Step 3: Change the Backend API url from the above steps
 ```
-cd src/Config/config.js
-nano config.js
+nana src/Config/config.js
 ```
 - Step 3: Start the server
 ```
