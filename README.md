@@ -24,7 +24,7 @@ Researchers face significant challenges in maintaining up-to-date knowledge of e
 To synthesize relevant information, researchers are required to read or at least walkthrough hundreds of papers, navigating diverse reporting standards and disciplinary jargon. Consequently, a substantial amount of time and effort is invested in reviewing information that often proves irrelevant or non-useful. This inefficiency hinders their ability to harness the vast and continually expanding body of scientific literature.
 
 In summary, the key pain points for researchers include:
-1.	Information Overloa
+1.	Information Overload
 2.	Time-Consuming Review
 3.	Interdisciplinary Challenges
 4.	Relevance Filtering
