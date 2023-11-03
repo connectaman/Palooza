@@ -170,6 +170,8 @@ npm start
 
 <h2 align="left">👋 Aman Ulla</h2>
 
+-  Senior Machine Learning Engineer @[ZS Associates](https://www.zs.com/)
+
 - 🌱 I’m currently learning and working on **Gen AI**
 
 - 📝 I regularly write articles on [https://hashnode.com/@connectaman](https://hashnode.com/@connectaman)
@@ -193,6 +195,8 @@ npm start
 
 
 <h2 align="left">👋 Srinivas Alva</h2>
+
+-  Data Scientist @[ZS Associates](https://www.zs.com/)
 
 - 🌱 I am presently in the process of learning and actively engaged with **Gen AI**.
 
