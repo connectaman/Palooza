@@ -1,4 +1,4 @@
-# NASAPalooza : Revolutionizing Research for NASA with LLM’s (Winner of NASA Hackathon)
+# NASAPalooza : Revolutionizing Research for NASA with LLM’s (🥇 Winner of NASA Hackathon)
 
 https://drivendata.co/blog/ai-assistants-winners
 
