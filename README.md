@@ -1,4 +1,7 @@
-# NASAPalooza : Revolutionizing Research for NASA with LLM’s 
+# NASAPalooza : Revolutionizing Research for NASA with LLM’s (Winner of NASA Hackathon)
+
+https://drivendata.co/blog/ai-assistants-winners
+
 Research Rovers AI Research Assistants for NASA
 
 # Demo
