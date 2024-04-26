@@ -6,10 +6,10 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends build-essent
 
 RUN apt-get install -y git python3-dev
 
-COPY ./requirements.txt.test /code/requirements.txt.test
+COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt.test
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 #RUN python -m spacy download en_core_web_sm
 

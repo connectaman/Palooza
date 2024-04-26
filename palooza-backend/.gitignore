@@ -48,3 +48,9 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Virtual environments
+.venv
+
+# Private keys
+*.env
