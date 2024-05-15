@@ -1,15 +1,14 @@
 from langchain.tools import Tool
 from langchain_google_community import GoogleSearchAPIWrapper
-import logging
 from langchain_community.document_loaders import UnstructuredURLLoader
 import re
 import string
 from functools import lru_cache
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
-logging.basicConfig(
-    format="%(asctime)s | %(levelname)s: %(message)s", level=logging.INFO
-)
 search = GoogleSearchAPIWrapper()
 
 
@@ -35,7 +34,7 @@ def get_links(raw_command):
         for i, res in enumerate(sources):
             prompt += f""" Source [{i+1}] {res["link"]} \n {res["snippet"]}"""
         return prompt
-    except:
+    except Exception:
         return " "
 
 
