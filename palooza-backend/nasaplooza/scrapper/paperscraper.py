@@ -9,6 +9,10 @@ import plotly
 import base64
 import os
 from pymed import PubMed
+from dotenv import load_dotenv
+from nasaplooza.utils.log import logger
+
+load_dotenv()
 
 pubmed = PubMed(tool="Searcher", email="my@email.address")
 
@@ -96,19 +100,22 @@ def scrape_paper_info(paper_name):
                     author["h_index"] = row.get("h_index").get("all")
                 if "i10_index" in row:
                     author["i10_index"] = row.get("i10_index").get("all")
-            author["graph"] = convert_graph_to_base64(
-                px.bar(
-                    pd.DataFrame(results.get("cited_by").get("graph")),
-                    x="year",
-                    y="citations",
+            try:
+                author["graph"] = convert_graph_to_base64(
+                    px.bar(
+                        pd.DataFrame(results.get("cited_by").get("graph")),
+                        x="year",
+                        y="citations",
+                    )
                 )
-            )
-            author_profiles.append(author)
+                author_profiles.append(author)
+            except ValueError:
+                pass
         return df, author_profiles, related_searches
 
 
 def convert_graph_to_base64(fig):
-    png = plotly.io.to_image(fig)
+    png = plotly.io.to_image(fig, format="png")
     png_base64 = base64.b64encode(png).decode("ascii")
     return png_base64
 
@@ -346,7 +353,7 @@ def get_all_papers_from_scholar(query, start):
     return final_df
 
 
-def get_author_details(url):
+def get_author_details(url: str):
     URL = "https://scholar.google.com"
     page = requests.get(URL + url)
     soup = BeautifulSoup(page.content, "html.parser")
@@ -355,7 +362,7 @@ def get_author_details(url):
     print(name)
 
 
-def get_authors_profiles(query):
+def get_authors_profiles(query: str) -> list[str]:
     keyword = urllib.parse.quote(query)
     URL = f"https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q={keyword}"
     page = requests.get(URL)
@@ -368,22 +375,28 @@ def get_authors_profiles(query):
                 str(author)[str(author).find("href=") + 6 : str(author).find('">')]
             )
     print(authors)
+    return authors
 
 
-def get_timeseries_graph(trend_data):
+def get_timeseries_graph(trend_data) -> str:
     data = []
-
     for d in trend_data:
         data.append(
             {"months": d["date"], "total_queries": d["values"][0]["extracted_value"]}
         )
+    if len(data) == 0:
+        return ""
     df = pd.DataFrame(data)
-    fig = px.line(df, x="months", y="total_queries")
-    png_base64 = convert_graph_to_base64(fig)
+    logger.debug("Creating timeseries graph")
+    try:
+        fig = px.line(df, x="months", y="total_queries")
+        png_base64 = convert_graph_to_base64(fig)
+    except ValueError:
+        png_base64 = ""
     return png_base64
 
 
-def get_trend_of_title(query):
+def get_trend_of_title(query: str) -> dict[str, str]:
     response = {}
     params = {
         "engine": "google_trends",
@@ -391,10 +404,14 @@ def get_trend_of_title(query):
         "data_type": "TIMESERIES",
         "api_key": SERP_API_KEY,
     }
+    logger.debug("Getting trend of the title")
     search = GoogleSearch(params)
-    response["TIMESERIES"] = search.get_dict()["interest_over_time"]
+    search_results = search.get_dict()
+    if "interest_over_time" in search_results:
+        response["TIMESERIES"] = search_results["interest_over_time"]
+    else:
+        response["TIMESERIES"] = {"timeline_data": []}
     timeseries_base = get_timeseries_graph(response["TIMESERIES"]["timeline_data"])
-
     response = {"timeseries": timeseries_base, "reason": response["TIMESERIES"]}
     return response
 
@@ -455,12 +472,16 @@ def get_authorid_by_paper(
     results = search.get_dict()
     organic_results = results.get("organic_results")[0]
     if first_author:
-        author_id = results.get("organic_results")[0]["publication_info"]["authors"][0][
-            "author_id"
-        ]
-        author_name = results.get("organic_results")[0]["publication_info"]["authors"][
-            0
-        ]["name"]
+        try:
+            author_id = results.get("organic_results")[0]["publication_info"][
+                "authors"
+            ][0]["author_id"]
+            author_name = results.get("organic_results")[0]["publication_info"][
+                "authors"
+            ][0]["name"]
+        except KeyError:
+            author_id = ""
+            author_name = ""
     else:
         author_id = results.get("organic_results")[0]["publication_info"]["authors"][
             -1
